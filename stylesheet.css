@@ -1,1 +1,13 @@
-
+.standardparagraph {
+  font-family:"Arial";
+  color:white;
+}
+@font-face {
+  font-family:"PaleBlue";
+  src: url(http://puu.sh/nXUQm/6f554d7124.ttf)
+}
+.startnewpara {
+  font-family:"PaleBlue";
+  color:white;
+  font-size:30;
+}
