@@ -11,3 +11,12 @@
   color:white;
   font-size:30;
 }
+
+#nav {
+  float:left;
+  width:125px;
+  height:300px;
+  text-align:center;
+  border-width:3px;
+  border-style:solid;
+}
