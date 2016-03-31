@@ -1,17 +1,75 @@
 .standardparagraph {
   font-family:"Arial";
-  color:white;
+  color:gray;
 }
 @font-face {
   font-family:"PaleBlue";
-  src: url(http://puu.sh/nXUQm/6f554d7124.ttf)
-}
-.startnewpara {
-  font-family:"PaleBlue";
-  color:white;
-  font-size:30;
+  src:url('http://puu.sh/nXUQm/6f554d7124.ttf')
 }
 
+span{
+  font-family:'Tangerine', serif;
+  color: white;
+  font-size:30;
+  padding-right:10
+  -webkit-text-stroke-width:1px;
+}
+.videobg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 125%;
+  height: 125%;
+}
+
+@media (min-aspect-ratio: 39/1) {
+  .background-video {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 39/1) {
+  .background-video {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (max-width: auto) {
+  .videobg {
+    background: url('https://www.wonderlandindustry.com/wp-content/uploads/2016/01/1.png') center center / cover no-repeat;
+  }
+
+  .background-video {
+    display: none;
+  }
+}
+#para2span{
+	background:url(../pepsi%20and%20cola.png);
+	background-size:179px;
+	-webkit-text-fill-color:white;
+
+	
+}
+
+#colaimg{
+	width:600px;
+}
+p {
+	border:thin;
+	border-color:#999;
+}
 #nav {
   float:left;
   width:125px;
@@ -19,4 +77,26 @@
   text-align:center;
   border-width:3px;
   border-style:solid;
+  font-family:Arial, sans-serif;
+}
+a {
+	color:#FBFBFB;
+	text-decoration:none;
+}
+a:hover {
+	color:#C7C7C7;
+	text-decoration:underline;
+}
+.banner {
+	font-family:Arial, sans-serif;
+	color:white;
+}
+#startnewparagraph2 {
+	padding-right:15px;
+}
+#container{
+	padding:25%;
+	width:700px;
+	height:auto;
+	text-align:center;
 }
